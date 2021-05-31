@@ -59,7 +59,7 @@ class MagicGrid {
       let style = this.items[i].style;
 
       style.position = "absolute";
-  
+
       if (this.animate) {
         style.transition = `${this.useTransform ? "transform" : "top, left"} 0.2s ease`;
       }
@@ -88,7 +88,7 @@ class MagicGrid {
   setup () {
     let width = this.container.getBoundingClientRect().width;
     let colWidth = this.colWidth();
-    let numCols = Math.floor(width/colWidth) || 1;
+    let numCols = Math.floor((width + this.gutter)/colWidth) || 1;
     let cols = [];
 
     if (this.maxColumns && numCols > this.maxColumns) {
