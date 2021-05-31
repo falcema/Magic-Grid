@@ -143,6 +143,7 @@ class MagicGrid {
 
       if(this.useTransform){
         item.style.transform = `translate(${left}, ${top})`;
+        item.style.height = colWidth - this.gutter + "px";
       }
       else{
         item.style.top = top;
