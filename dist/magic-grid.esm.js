@@ -111,7 +111,9 @@ MagicGrid.prototype.init = function init () {
 
     style.position = "absolute";
 
-    if (this.animate) ;
+    if (this.animate) {
+      style.transition = (this.useTransform ? "transform" : "top, left") + " 0.15s ease";
+    }
   }
 
   this.started = true;
