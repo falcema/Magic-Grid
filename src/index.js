@@ -61,7 +61,7 @@ class MagicGrid {
       style.position = "absolute";
 
       if (this.animate) {
-        style.transition = `${this.useTransform ? "transform" : "top, left"} 0.15s ease`;
+        //style.transition = `${this.useTransform ? "transform" : "top, left"} 0.15s ease`;
       }
     }
 
