@@ -30,5 +30,8 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-uglify-es": "0.0.1"
+  },
+  "dependencies": {
+    "infinite-scroll": "^4.0.1"
   }
 }

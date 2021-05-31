@@ -209,8 +209,10 @@ MagicGrid.prototype.positionItems = function positionItems () {
       maxHeight = col.height;
     }
   }
+  if(this.container.classList.contains("more-clicked")){
+    this.container.style.height = maxHeight + this.gutter + "px";
+  }
 
-  this.container.style.height = maxHeight + this.gutter + "px";
 };
 
 /**
